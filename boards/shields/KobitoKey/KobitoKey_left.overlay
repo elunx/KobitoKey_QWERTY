@@ -104,7 +104,6 @@
         layers = <0>;
         input-processors = 
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&sensor_rotation_right>,
             <&zip_xy_scaler 75 100>,
             <&zip_temp_layer 3 300000>; 
     };
