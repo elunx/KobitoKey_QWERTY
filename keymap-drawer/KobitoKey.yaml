@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - SEMI
+  - MINUS
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -33,12 +33,12 @@ layers:
   - APOS
   - {t: ESCAPE, h: LCTRL}
   - LWIN
-  - LALT
+  - {t: LANG2, h: LALT}
   - {t: SPACE, h: NUMBER}
-  - {t: SPACE, h: FUNCTION}
-  - {t: BACKSPACE, h: NUMBER}
-  - {t: ENTER, h: FUNCTION}
-  - RCTRL
+  - {t: LANG1, h: FUNCTION}
+  - {t: ENTER, h: NUMBER}
+  - {t: BACKSPACE, h: FUNCTION}
+  - DEL
   - RSHFT
   - {t: SLASH, h: LALT}
   NUMBER:
@@ -214,3 +214,7 @@ combos:
   k: ESC
 - p: [10, 11]
   k: TAB
+- p: [22, 23]
+  k: Sft+1
+- p: [26, 27]
+  k: Sft+SLASH
