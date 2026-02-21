@@ -40,9 +40,9 @@ jobs:
         run: |
           echo "msg=$(git log -1 --pretty=%s)" >> $GITHUB_OUTPUT
 
-      - name: Sync with remote branch
-        run: |
-          git pull --rebase origin ${{ steps.branch-name.outputs.branch }}
+      # - name: Sync with remote branch
+      #   run: |
+      #     git pull --rebase origin ${{ steps.branch-name.outputs.branch }}
 
       - name: Download firmware artifacts
         uses: actions/download-artifact@v4
