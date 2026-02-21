@@ -86,8 +86,8 @@
     device = <&tb_left>;
 
     input-processors =
-            <&zip_xy_to_scroll_mapper>,
             <&zip_xy_scaler 1 32>,
+            <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             // <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
             <&scroll_runtime_input_processor_l>;
@@ -103,7 +103,7 @@
     default_aml {
         layers = <0>;
         input-processors = 
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 75 100>,
             <&zip_temp_layer 3 300000>; 
     };
