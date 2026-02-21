@@ -43,7 +43,7 @@
 
 
         evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
+        x-input-code = <INPUT_REL_X>;oi
         y-input-code = <INPUT_REL_Y>;
     };
 };
@@ -87,16 +87,27 @@
 
     input-processors =
             <&zip_xy_to_scroll_mapper>,
+            <&zip_xy_scaler 1 32>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
+            // <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
             <&scroll_runtime_input_processor_l>;
 };
 
 &tb_right_listener {
     status = "okay";
 
-    input-processors =
-        <&mouse_runtime_input_processor &scroll_runtime_input_processor_r>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
+    // input-processors =
+    //     <&mouse_runtime_input_processor &scroll_runtime_input_processor_r>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
+
+    // デフォルトレイヤーは一番最後！
+    default_aml {
+        layers = <0>;
+        input-processors = 
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&sensor_rotation_right>,
+            <&zip_xy_scaler 75 100>,
+            <&zip_temp_layer 3 300000>; 
+    };
 };
 
 &scroll_runtime_input_processor_l {
@@ -111,4 +122,15 @@
         x-codes = <INPUT_REL_X>;
         y-codes = <INPUT_REL_Y>;
         xy-to-scroll-enabled;
+};
+
+&zip_temp_layer {
+    excluded-positions = <
+        // 12 // LCtrl
+        6 // u
+        7 // i
+        8 // o
+        // 24 // LShift
+    >;
+    require-prior-idle-ms = <400>;
 };
