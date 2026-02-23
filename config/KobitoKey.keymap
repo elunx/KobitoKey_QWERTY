@@ -109,36 +109,36 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp W         &kp E  &kp R           &kp T                                  &kp Y            &kp U    &kp I      &kp O      &lt 6 P
-&mt LCTRL A          &kp S         &kp D  &kp F           &kp G                                  &kp H            &kp J    &kp K      &kp L      &mt LCTRL MINUS
-&mt LEFT_SHIFT Z     &kp X         &kp C  &kp V           &kp B                                  &kp N            &kp M    &kp COMMA  &kp DOT    &mt LSHIFT APOS
-&mt LEFT_GUI ESCAPE  &kp LEFT_ALT         &mt LALT LANG2  &lt 1 SPACE  &lt 2 LANG1  &lt 1 ENTER  &lt 3 BACKSPACE  &kp DEL             &kp EQUAL  &none
+&kp Q                &kp W         &kp E  &kp R        &kp T                                &kp Y            &kp U    &kp I      &kp O      &kp P
+&mt LCTRL A          &kp S         &kp D  &kp F        &kp G                                &kp H            &kp J    &kp K      &kp L      &mt LCTRL MINUS
+&mt LEFT_SHIFT Z     &kp X         &kp C  &kp V        &kp B                                &kp N            &kp M    &kp COMMA  &kp DOT    &mt LSHIFT APOS
+&mt LEFT_GUI ESCAPE  &kp LEFT_ALT         &lt 2 LANG2  &lt 1 SPACE  &lt 2 LANG1  &kp ENTER  &lt 3 BACKSPACE  &kp DEL             &kp EQUAL  &none
             >;
         };
 
         NUM {
             label = "NUMBER";
             bindings = <
-&none   &none          &kp LC(A)  &none          &kp LC(Y)                  &kp SINGLE_QUOTE  &kp N7  &kp N8  &kp N9  &kp SLASH
-&trans  &kp LS(LG(S))  &kp LC(C)  &kp LC(V)      &kp LC(Z)                  &kp PERIOD        &kp N4  &kp N5  &kp N6  &kp MINUS
-&trans  &none          &kp LC(X)  &kp LS(LC(V))  &kp LC(B)                  &kp N0            &kp N1  &kp N2  &kp N3  &kp LS(SEMICOLON)
-&none   &none                     &trans         &trans     &trans  &trans  &trans            &trans          &trans  &kp LS(SINGLE_QUOTE)
+&none       &none          &kp LC(A)  &none          &kp LC(Y)                  &kp SINGLE_QUOTE  &kp N7  &kp N8  &kp N9  &kp SLASH
+&kp LCTRL   &kp LS(LG(S))  &kp LC(C)  &kp LC(V)      &kp LC(Z)                  &kp PERIOD        &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp LSHIFT  &none          &kp LC(X)  &kp LS(LC(V))  &kp LC(B)                  &kp N0            &kp N1  &kp N2  &kp N3  &kp LS(SEMICOLON)
+&none       &none                     &trans         &trans     &trans  &trans  &trans            &trans          &trans  &kp LS(SINGLE_QUOTE)
             >;
         };
 
         FUNC {
             label = "FUNCTION";
             bindings = <
-&kp PG_UP      &kp UP    &kp PAGE_DOWN  &kp HOME  &trans                   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&kp LEFT       &kp DOWN  &kp RIGHT      &kp END   &trans                   &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&kp BACKSPACE  &kp DEL   &trans         &trans    &trans                   &kp F11  &kp F12  &trans  &trans  &trans
-&trans         &trans                   &trans    &trans  &trans  &kp DEL  &trans   &trans           &trans  &trans
+&kp F1          &kp F2  &kp F3  &kp F4   &kp F5                   &trans  &trans  &trans  &trans  &trans
+&kp F6          &kp F7  &kp F8  &kp F9   &kp F10                  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &kp F11  &kp F12                  &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans   &trans   &trans  &trans  &trans  &trans          &trans  &trans
             >;
         };
 
         cursol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans    &trans    &kp UP    &trans     &trans
+&trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp LEFT  &kp UP    &kp RIGHT  &kp END
 &trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END
 &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans    &trans     &trans
 &trans  &trans          &trans  &trans  &trans  &trans  &trans    &trans              &trans     &trans
