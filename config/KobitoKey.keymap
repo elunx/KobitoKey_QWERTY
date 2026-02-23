@@ -152,32 +152,32 @@
             label = "MACRO_BRA_M";
         };
 
-        macro_bra_l: new_macro {
+        macro_bra_l: macro_bra_l {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACKET &kp NON_US_HASH &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "MACRO_BRA_L";
         };
 
-        macro_dq: new_macro {
+        macro_dq: macro_dq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(N2) &kp LS(N2) &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "MACRO_DQ";
         };
 
-        macro_sq: new_macro {
+        macro_sq: macro_sq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(N7) &kp LS(N7) &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "MACRO_SQ";
         };
 
-        macro_bra_ket: new_macro {
+        macro_bra_ket: macro_bra_ket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(COMMA) &kp LS(DOT) &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "MACRO_BRA_KET";
         };
     };
 
