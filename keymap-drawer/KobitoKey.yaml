@@ -43,7 +43,7 @@ layers:
   - ''
   NUMBER:
   - ''
-  - ''
+  - Ctl+W
   - Ctl+A
   - ''
   - Ctl+Y
@@ -52,7 +52,7 @@ layers:
   - '8'
   - '9'
   - SLASH
-  - LCTRL
+  - Ctl+S
   - Sft+Gui+S
   - Ctl+C
   - Ctl+V
