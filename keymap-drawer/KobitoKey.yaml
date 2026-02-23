@@ -325,5 +325,5 @@ combos:
   k: '&macro_dq'
 - p: [11, 12]
   k: '&macro_sq'
-- p: [22, 23]
+- p: [22, 21]
   k: '&macro_bra_ket'

@@ -382,8 +382,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
 </g>
 <g class="combo combopos-15">
-<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+<rect rx="6" ry="6" x="98" y="131" width="28" height="26" class="combo"/>
+<text x="112" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -623,8 +623,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
 </g>
 <g class="combo combopos-15">
-<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+<rect rx="6" ry="6" x="98" y="131" width="28" height="26" class="combo"/>
+<text x="112" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -858,8 +858,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
 </g>
 <g class="combo combopos-14">
-<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+<rect rx="6" ry="6" x="98" y="131" width="28" height="26" class="combo"/>
+<text x="112" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -1091,8 +1091,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
 </g>
 <g class="combo combopos-14">
-<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+<rect rx="6" ry="6" x="98" y="131" width="28" height="26" class="combo"/>
+<text x="112" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -1353,8 +1353,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
 </g>
 <g class="combo combopos-16">
-<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+<rect rx="6" ry="6" x="98" y="131" width="28" height="26" class="combo"/>
+<text x="112" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -1615,8 +1615,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
 </g>
 <g class="combo combopos-16">
-<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+<rect rx="6" ry="6" x="98" y="131" width="28" height="26" class="combo"/>
+<text x="112" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -1861,8 +1861,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
 </g>
 <g class="combo combopos-14">
-<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+<rect rx="6" ry="6" x="98" y="131" width="28" height="26" class="combo"/>
+<text x="112" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
