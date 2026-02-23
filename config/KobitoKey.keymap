@@ -60,7 +60,7 @@
         combo_tab {
             timeout-ms = <50>;
             key-positions = <10 11>;
-            bindings = <&kp TAB>;
+            bindings = <&mt LCTRL TAB>;
         };
 
         exclamation {
@@ -135,6 +135,11 @@
             bindings = <&macro_bra_ket>;
             key-positions = <22 21>;
         };
+
+        l_shift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
@@ -187,8 +192,8 @@
         default_layer {
             bindings = <
 &kp Q                &kp W         &kp E  &kp R        &kp T                                &kp Y            &kp U    &kp I      &kp O      &kp P
-&mt LCTRL A          &kp S         &kp D  &kp F        &kp G                                &kp H            &kp J    &kp K      &kp L      &mt LCTRL MINUS
-&mt LEFT_SHIFT Z     &kp X         &kp C  &kp V        &kp B                                &kp N            &kp M    &kp COMMA  &kp DOT    &mt LSHIFT SEMICOLON
+&kp A                &kp S         &kp D  &kp F        &kp G                                &kp H            &kp J    &kp K      &kp L      &mt LCTRL MINUS
+&kp Z                &kp X         &kp C  &kp V        &kp B                                &kp N            &kp M    &kp COMMA  &kp DOT    &mt LSHIFT SEMICOLON
 &mt LEFT_GUI ESCAPE  &kp LEFT_ALT         &lt 2 LANG2  &lt 1 SPACE  &lt 2 LANG1  &kp ENTER  &lt 3 BACKSPACE  &kp DEL             &kp EQUAL  &none
             >;
         };
