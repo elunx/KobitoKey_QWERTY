@@ -22,6 +22,16 @@
             #binding-cells = <1>;
             label = "LAYOUT_SHIFT_KEY_PRESS";
         };
+
+        mo_mkp: mo_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_MKP";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+        };
     };
 };
 
@@ -53,7 +63,7 @@
             bindings = <&kp TAB>;
         };
 
-        shift1 {
+        exclamation {
             bindings = <&kp LS(NUMBER_1)>;
             key-positions = <22 23>;
         };
@@ -62,6 +72,36 @@
             bindings = <&kp LS(SLASH)>;
             key-positions = <26 27>;
         };
+
+        underscore {
+            bindings = <&kp LS(INT1)>;
+            key-positions = <18 19>;
+        };
+
+        yen {
+            bindings = <&kp INT3>;
+            key-positions = <8 9>;
+        };
+
+        atmark {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <28 29>;
+        };
+
+        bt {
+            bindings = <&mo 6>;
+            key-positions = <5 9>;
+        };
+
+        scr_mb4 {
+            bindings = <&mo_mkp 5 MB4>;
+            key-positions = <6 7>;
+        };
+
+        mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <8 7>;
+        };
     };
 
     keymap {
@@ -69,20 +109,20 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W     &kp E  &kp R           &kp T                                  &kp Y            &kp U    &kp I      &kp O      &lt 4 P
-&kp A             &kp S     &kp D  &kp F           &kp G                                  &kp H            &kp J    &kp K      &kp L      &kp MINUS
-&mt LEFT_SHIFT Z  &kp X     &kp C  &kp V           &kp B                                  &kp N            &kp M    &kp COMMA  &kp DOT    &kp APOS
-&mt LCTRL ESCAPE  &kp LWIN         &mt LALT LANG2  &lt 1 SPACE  &lt 2 LANG1  &lt 1 ENTER  &lt 2 BACKSPACE  &kp DEL             &kp RSHFT  &mt LALT SLASH
+&kp Q                &kp W         &kp E  &kp R           &kp T                                  &kp Y            &kp U    &kp I      &kp O      &lt 6 P
+&mt LCTRL A          &kp S         &kp D  &kp F           &kp G                                  &kp H            &kp J    &kp K      &kp L      &mt LCTRL MINUS
+&mt LEFT_SHIFT Z     &kp X         &kp C  &kp V           &kp B                                  &kp N            &kp M    &kp COMMA  &kp DOT    &mt LSHIFT APOS
+&mt LEFT_GUI ESCAPE  &kp LEFT_ALT         &mt LALT LANG2  &lt 1 SPACE  &lt 2 LANG1  &lt 1 ENTER  &lt 3 BACKSPACE  &kp DEL             &kp EQUAL  &none
             >;
         };
 
         NUM {
             label = "NUMBER";
             bindings = <
-&kp N1         &kp N2   &kp N3  &kp N4     &kp N5                     &kp N6     &kp N7     &kp N8    &kp N9    &kp N0
-&tog_ls        &trans   &trans  &trans     &trans                     &kp MINUS  &kp EQUAL  &kp LBRC  &kp RBRC  &kp BACKSLASH
-&kp BACKSPACE  &kp DEL  &trans  &trans     &trans                     &kp ASTRK  &kp SLASH  &kp SEMI  &kp SQT   &trans
-&trans         &trans           &kp ENTER  &trans  &kp ENTER  &trans  &trans     &trans               &trans    &trans
+&none   &none          &kp LC(A)  &none          &kp LC(Y)                  &kp SINGLE_QUOTE  &kp N7  &kp N8  &kp N9  &kp SLASH
+&trans  &kp LS(LG(S))  &kp LC(C)  &kp LC(V)      &kp LC(Z)                  &kp PERIOD        &kp N4  &kp N5  &kp N6  &kp MINUS
+&trans  &none          &kp LC(X)  &kp LS(LC(V))  &kp LC(B)                  &kp N0            &kp N1  &kp N2  &kp N3  &kp LS(SEMICOLON)
+&none   &none                     &trans         &trans     &trans  &trans  &trans            &trans          &trans  &kp LS(SINGLE_QUOTE)
             >;
         };
 
@@ -96,23 +136,42 @@
             >;
         };
 
+        cursol {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans    &trans    &kp UP    &trans     &trans
+&trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END
+&trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans    &trans     &trans
+&trans  &trans          &trans  &trans  &trans  &trans  &trans    &trans              &trans     &trans
+            >;
+        };
+
         MOUSE {
             label = "MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                 &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans                 &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans                 &trans  &trans    &trans    &trans    &trans
-&trans  &trans          &trans  &trans  &to 0  &trans  &trans  &trans              &to 0     &trans
+&trans  &trans          &to 0   &trans  &to 0  &trans  &trans  &trans              &to 0     &to 0
+            >;
+        };
+
+        scroll {
+            label = "scroll";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                 &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans                 &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans                 &trans  &trans    &trans    &trans    &trans
+&trans  &trans          &to 0   &trans  &to 0  &trans  &trans  &trans              &to 0     &to 0
             >;
         };
 
         BT {
             label = "BT";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &bt BT_CLR_ALL                  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans
-&trans        &trans                      &trans        &trans          &trans  &trans  &trans  &trans          &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans      &trans          &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans                        &trans      &trans          &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans                        &trans      &trans          &trans  &trans  &trans
+&trans        &trans                      &trans        &trans        &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL          &trans  &trans
             >;
         };
     };
