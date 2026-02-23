@@ -133,7 +133,7 @@
 
         macro_bra_ket {
             bindings = <&macro_bra_ket>;
-            key-positions = <22 23>;
+            key-positions = <22 21>;
         };
     };
 
