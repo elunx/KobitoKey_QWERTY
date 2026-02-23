@@ -259,7 +259,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">APOS</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">SEMICOLON</tspan></text>
 <text x="0" y="24" class="key hold">LSHIFT</text>
 </g>
 <g transform="translate(28, 217)" class="key keypos-30">
@@ -362,18 +362,28 @@ path.combo { stroke: #7f7f7f; }
 <text x="588" y="46" class="combo tap layer-activator">BT</text>
 </a></g>
 <g class="combo combopos-10">
-<rect rx="6" ry="6" x="546" y="19" width="28" height="26" class="combo"/>
-<text x="560" y="32" class="combo tap">
-<tspan x="560" dy="-0.6em">&amp;mkp</tspan><tspan x="560" dy="1.2em">MB4</tspan>
-</text>
-<a href="#scroll">
-<text x="560" y="43" class="combo hold layer-activator">scroll</text>
-</a></g>
-<g class="combo combopos-11">
 <rect rx="6" ry="6" x="602" y="19" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">
-<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB5</tspan>
-</text>
+<text x="616" y="32" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-11">
+<rect rx="6" ry="6" x="602" y="75" width="28" height="26" class="combo"/>
+<text x="616" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="602" y="131" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="98" y="19" width="28" height="26" class="combo"/>
+<text x="112" y="32" class="combo tap"><tspan style="font-size: 78%">&amp;macro_dq</tspan></text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="98" y="75" width="28" height="26" class="combo"/>
+<text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -593,18 +603,28 @@ path.combo { stroke: #7f7f7f; }
 <text x="588" y="46" class="combo tap layer-activator">BT</text>
 </a></g>
 <g class="combo combopos-10">
-<rect rx="6" ry="6" x="546" y="19" width="28" height="26" class="combo"/>
-<text x="560" y="32" class="combo tap">
-<tspan x="560" dy="-0.6em">&amp;mkp</tspan><tspan x="560" dy="1.2em">MB4</tspan>
-</text>
-<a href="#scroll">
-<text x="560" y="43" class="combo hold layer-activator">scroll</text>
-</a></g>
-<g class="combo combopos-11">
 <rect rx="6" ry="6" x="602" y="19" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">
-<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB5</tspan>
-</text>
+<text x="616" y="32" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-11">
+<rect rx="6" ry="6" x="602" y="75" width="28" height="26" class="combo"/>
+<text x="616" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="602" y="131" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="98" y="19" width="28" height="26" class="combo"/>
+<text x="112" y="32" class="combo tap"><tspan style="font-size: 78%">&amp;macro_dq</tspan></text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="98" y="75" width="28" height="26" class="combo"/>
+<text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -822,18 +842,24 @@ path.combo { stroke: #7f7f7f; }
 <text x="588" y="46" class="combo tap layer-activator">BT</text>
 </a></g>
 <g class="combo combopos-10">
-<rect rx="6" ry="6" x="546" y="19" width="28" height="26" class="combo"/>
-<text x="560" y="32" class="combo tap">
-<tspan x="560" dy="-0.6em">&amp;mkp</tspan><tspan x="560" dy="1.2em">MB4</tspan>
-</text>
-<a href="#scroll">
-<text x="560" y="43" class="combo hold layer-activator">scroll</text>
-</a></g>
+<rect rx="6" ry="6" x="602" y="75" width="28" height="26" class="combo"/>
+<text x="616" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
 <g class="combo combopos-11">
-<rect rx="6" ry="6" x="602" y="19" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">
-<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB5</tspan>
-</text>
+<rect rx="6" ry="6" x="602" y="131" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="98" y="19" width="28" height="26" class="combo"/>
+<text x="112" y="32" class="combo tap"><tspan style="font-size: 78%">&amp;macro_dq</tspan></text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="98" y="75" width="28" height="26" class="combo"/>
+<text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -1049,18 +1075,24 @@ path.combo { stroke: #7f7f7f; }
 <text x="588" y="46" class="combo tap layer-activator">BT</text>
 </a></g>
 <g class="combo combopos-10">
-<rect rx="6" ry="6" x="546" y="19" width="28" height="26" class="combo"/>
-<text x="560" y="32" class="combo tap">
-<tspan x="560" dy="-0.6em">&amp;mkp</tspan><tspan x="560" dy="1.2em">MB4</tspan>
-</text>
-<a href="#scroll">
-<text x="560" y="43" class="combo hold layer-activator">scroll</text>
-</a></g>
+<rect rx="6" ry="6" x="602" y="75" width="28" height="26" class="combo"/>
+<text x="616" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
 <g class="combo combopos-11">
-<rect rx="6" ry="6" x="602" y="19" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">
-<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB5</tspan>
-</text>
+<rect rx="6" ry="6" x="602" y="131" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="98" y="19" width="28" height="26" class="combo"/>
+<text x="112" y="32" class="combo tap"><tspan style="font-size: 78%">&amp;macro_dq</tspan></text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="98" y="75" width="28" height="26" class="combo"/>
+<text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
@@ -1304,6 +1336,26 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB5</tspan>
 </text>
 </g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="602" y="75" width="28" height="26" class="combo"/>
+<text x="616" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="602" y="131" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="98" y="19" width="28" height="26" class="combo"/>
+<text x="112" y="32" class="combo tap"><tspan style="font-size: 78%">&amp;macro_dq</tspan></text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="98" y="75" width="28" height="26" class="combo"/>
+<text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1540)" class="layer-scroll">
@@ -1546,6 +1598,26 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB5</tspan>
 </text>
 </g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="602" y="75" width="28" height="26" class="combo"/>
+<text x="616" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="602" y="131" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="98" y="19" width="28" height="26" class="combo"/>
+<text x="112" y="32" class="combo tap"><tspan style="font-size: 78%">&amp;macro_dq</tspan></text>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="98" y="75" width="28" height="26" class="combo"/>
+<text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1848)" class="layer-BT">
@@ -1773,18 +1845,24 @@ path.combo { stroke: #7f7f7f; }
 <text x="588" y="46" class="combo tap layer-activator">BT</text>
 </a></g>
 <g class="combo combopos-10">
-<rect rx="6" ry="6" x="546" y="19" width="28" height="26" class="combo"/>
-<text x="560" y="32" class="combo tap">
-<tspan x="560" dy="-0.6em">&amp;mkp</tspan><tspan x="560" dy="1.2em">MB4</tspan>
-</text>
-<a href="#scroll">
-<text x="560" y="43" class="combo hold layer-activator">scroll</text>
-</a></g>
+<rect rx="6" ry="6" x="602" y="75" width="28" height="26" class="combo"/>
+<text x="616" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
 <g class="combo combopos-11">
-<rect rx="6" ry="6" x="602" y="19" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">
-<tspan x="616" dy="-0.6em">&amp;mkp</tspan><tspan x="616" dy="1.2em">MB5</tspan>
-</text>
+<rect rx="6" ry="6" x="602" y="131" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
+</g>
+<g class="combo combopos-12">
+<rect rx="6" ry="6" x="98" y="19" width="28" height="26" class="combo"/>
+<text x="112" y="32" class="combo tap"><tspan style="font-size: 78%">&amp;macro_dq</tspan></text>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="98" y="75" width="28" height="26" class="combo"/>
+<text x="112" y="88" class="combo tap"><tspan style="font-size: 78%">&amp;macro_sq</tspan></text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="154" y="131" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;macro_bra…</tspan></text>
 </g>
 </g>
 </g>
