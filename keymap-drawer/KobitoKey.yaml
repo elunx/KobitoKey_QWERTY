@@ -33,12 +33,12 @@ layers:
   - {t: SEMICOLON, h: LSHIFT}
   - {t: ESCAPE, h: LEFT GUI}
   - LEFT ALT
-  - {t: LANG2, h: FUNCTION}
+  - {t: LANG2, h: LCTRL}
   - {t: SPACE, h: NUMBER}
   - {t: LANG1, h: FUNCTION}
   - ENTER
   - {t: BACKSPACE, h: cursol}
-  - DEL
+  - {t: DEL, h: LSHIFT}
   - EQUAL
   - ''
   NUMBER:
@@ -52,7 +52,7 @@ layers:
   - '8'
   - '9'
   - SLASH
-  - Ctl+S
+  - LCTRL
   - Sft+Gui+S
   - Ctl+C
   - Ctl+V
@@ -115,9 +115,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,13 +197,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
+  - LCTRL
+  - {t: SPACE, h: LSHIFT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: default, h: toggle}
   scroll:
   - {t: ▽, type: trans}
@@ -238,20 +238,20 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
+  - LCTRL
+  - {t: SPACE, h: LSHIFT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: default, h: toggle}
   BT:
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -295,7 +295,7 @@ combos:
 - p: [0, 1]
   k: ESC
 - p: [10, 11]
-  k: {t: TAB, h: LCTRL}
+  k: TAB
 - p: [22, 23]
   k: Sft+1
 - p: [26, 27]
@@ -327,5 +327,3 @@ combos:
   k: '&macro_sq'
 - p: [22, 21]
   k: '&macro_bra_ket'
-- p: [20, 21]
-  k: LSHIFT
