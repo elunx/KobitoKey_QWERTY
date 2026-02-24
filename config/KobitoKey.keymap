@@ -60,7 +60,7 @@
         combo_tab {
             timeout-ms = <50>;
             key-positions = <10 11>;
-            bindings = <&mt LCTRL TAB>;
+            bindings = <&kp TAB>;
         };
 
         exclamation {
@@ -135,11 +135,6 @@
             bindings = <&macro_bra_ket>;
             key-positions = <22 21>;
         };
-
-        l_shift {
-            bindings = <&kp LSHIFT>;
-            key-positions = <20 21>;
-        };
     };
 
     macros {
@@ -191,10 +186,10 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp W         &kp E  &kp R        &kp T                                &kp Y            &kp U    &kp I      &kp O      &kp P
-&kp A                &kp S         &kp D  &kp F        &kp G                                &kp H            &kp J    &kp K      &kp L      &mt LCTRL MINUS
-&kp Z                &kp X         &kp C  &kp V        &kp B                                &kp N            &kp M    &kp COMMA  &kp DOT    &mt LSHIFT SEMICOLON
-&mt LEFT_GUI ESCAPE  &kp LEFT_ALT         &lt 2 LANG2  &lt 1 SPACE  &lt 2 LANG1  &kp ENTER  &lt 3 BACKSPACE  &kp DEL             &kp EQUAL  &none
+&kp Q                &kp W         &kp E  &kp R            &kp T                                &kp Y            &kp U           &kp I      &kp O      &kp P
+&kp A                &kp S         &kp D  &kp F            &kp G                                &kp H            &kp J           &kp K      &kp L      &mt LCTRL MINUS
+&kp Z                &kp X         &kp C  &kp V            &kp B                                &kp N            &kp M           &kp COMMA  &kp DOT    &mt LSHIFT SEMICOLON
+&mt LEFT_GUI ESCAPE  &kp LEFT_ALT         &mt LCTRL LANG2  &lt 1 SPACE  &lt 2 LANG1  &kp ENTER  &lt 3 BACKSPACE  &mt LSHIFT DEL             &kp EQUAL  &none
             >;
         };
 
@@ -202,7 +197,7 @@
             label = "NUMBER";
             bindings = <
 &none       &kp LC(W)      &kp LC(A)  &none          &kp LC(Y)                  &kp SINGLE_QUOTE  &kp N7  &kp N8  &kp N9  &kp SLASH
-&kp LC(S)   &kp LS(LG(S))  &kp LC(C)  &kp LC(V)      &kp LC(Z)                  &kp PERIOD        &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp LCTRL   &kp LS(LG(S))  &kp LC(C)  &kp LC(V)      &kp LC(Z)                  &kp PERIOD        &kp N4  &kp N5  &kp N6  &kp MINUS
 &kp LSHIFT  &none          &kp LC(X)  &kp LS(LC(V))  &kp LC(B)                  &kp N0            &kp N1  &kp N2  &kp N3  &kp LS(SEMICOLON)
 &none       &none                     &trans         &trans     &trans  &trans  &trans            &trans          &trans  &kp LS(SINGLE_QUOTE)
             >;
@@ -230,27 +225,27 @@
         MOUSE {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                 &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans                 &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans                 &trans  &trans    &trans    &trans    &trans
-&trans  &trans          &to 0   &trans  &to 0  &trans  &trans  &trans              &to 0     &to 0
+&trans  &trans  &trans  &trans     &trans                            &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans     &trans                            &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans     &trans                            &trans  &trans    &trans    &trans    &trans
+&trans  &trans          &kp LCTRL  &mt LSHIFT SPACE  &trans  &trans  &trans  &trans              &trans    &to 0
             >;
         };
 
         scroll {
             label = "scroll";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                 &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans                 &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans                 &trans  &trans    &trans    &trans    &trans
-&trans  &trans          &to 0   &trans  &to 0  &trans  &trans  &trans              &to 0     &to 0
+&trans  &trans  &trans  &trans     &trans                            &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans     &trans                            &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans     &trans                            &trans  &trans    &trans    &trans    &trans
+&trans  &trans          &kp LCTRL  &mt LSHIFT SPACE  &trans  &trans  &trans  &trans              &trans    &to 0
             >;
         };
 
         BT {
             label = "BT";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans      &trans          &trans  &trans  &trans
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0                  &trans      &trans          &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans                        &trans      &trans          &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans                        &trans      &trans          &trans  &trans  &trans
 &trans        &trans                      &trans        &trans        &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL          &trans  &trans
