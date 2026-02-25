@@ -132,8 +132,8 @@
         6 // u
         7 // i
         8 // o
-        32 // LCtrl
-        33 // LShift
+        33 // LCtrl
+        34 // LShift
         39 // to layer0
     >;
     require-prior-idle-ms = <400>;
