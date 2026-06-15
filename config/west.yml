@@ -16,7 +16,7 @@ manifest:
       url-base: https://github.com/cormoran
   projects:
     - name: zmk
-      remote: cormoran
+      remote: te9no
       revision: v0.3-branch+dya
       import: app/west.yml
 
