@@ -30,7 +30,7 @@ manifest:
 
     - name: zmk-rgbled-widget  # <-- led
       remote: caksoylar
-      revision: v0.3
+      revision: v0.3-branch
       
     - name: zmk-layout-shift
       remote: kot149
@@ -41,8 +41,8 @@ manifest:
       revision: main
 
     - name: zmk-module-runtime-input-processor
-      remote: cormoran
-      revision: main
+      remote: te9no
+      revision: zmk-v0.3.0.0
 
     - name: zmk-module-battery-history
       remote: cormoran
@@ -50,7 +50,7 @@ manifest:
 
     - name: zmk-module-ble-management
       remote: cormoran
-      revision: main
+      revision: zmk-v0.3.0.0
 
     - name: zmk-module-settings-rpc
       remote: cormoran
