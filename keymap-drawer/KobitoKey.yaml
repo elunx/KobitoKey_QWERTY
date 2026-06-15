@@ -31,18 +31,18 @@ layers:
   - COMMA
   - DOT
   - {t: SEMICOLON, h: LSHIFT}
-  - {t: ESCAPE, h: LEFT GUI}
+  - {t: LEFT GUI, h: LEFT GUI}
   - LEFT ALT
-  - {t: LANG2, h: NUMBER}
-  - {t: SPACE, h: LCTRL}
-  - {t: LANG1, h: LSHIFT}
+  - {t: SPACE, h: NUMBER}
+  - {t: SPACE, h: LEFT SHIFT}
+  - {t: LANG2, h: LCTRL}
   - {t: ENTER, h: FUNCTION}
   - {t: BACKSPACE, h: cursol}
-  - {t: DEL, h: LSHIFT}
+  - {t: DEL, h: Bracket}
   - EQUAL
   - ''
   NUMBER:
-  - ''
+  - ESCAPE
   - Ctl+W
   - Ctl+A
   - ''
@@ -51,8 +51,8 @@ layers:
   - '7'
   - '8'
   - '9'
-  - SLASH
-  - LCTRL
+  - INT3
+  - {t: TAB, h: LCTRL}
   - Sft+Gui+S
   - Ctl+C
   - Ctl+V
@@ -198,8 +198,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: SPACE, h: LCTRL}
-  - LSHIFT
+  - {t: SPACE, h: LSHIFT}
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -239,8 +239,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: SPACE, h: LCTRL}
-  - LSHIFT
+  - {t: SPACE, h: LSHIFT}
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -287,6 +287,47 @@ layers:
   - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Bracket:
+  - {t: ▽, type: trans}
+  - Sft+2
+  - Sft+2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+8
+  - Sft+9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+7
+  - Sft+7
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+RIGHT BRACKET
+  - Sft+NUHS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+COMMA
+  - Sft+PERIOD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RIGHT BRACKET
+  - NUHS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [12, 13]
   k: LANG2
@@ -294,8 +335,6 @@ combos:
   k: LANG1
 - p: [0, 1]
   k: ESC
-- p: [10, 11]
-  k: TAB
 - p: [22, 23]
   k: Sft+1
 - p: [26, 27]
@@ -303,7 +342,7 @@ combos:
 - p: [18, 19]
   k: Sft+INT1
 - p: [8, 9]
-  k: INT3
+  k: SLASH
 - p: [28, 29]
   k: LEFT BRACKET
 - p: [5, 9]
