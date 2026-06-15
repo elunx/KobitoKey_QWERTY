@@ -57,12 +57,6 @@
             bindings = <&kp ESC>;
         };
 
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
-
         exclamation {
             bindings = <&kp LS(NUMBER_1)>;
             key-positions = <22 23>;
@@ -79,7 +73,7 @@
         };
 
         yen {
-            bindings = <&kp INT3>;
+            bindings = <&kp SLASH>;
             key-positions = <8 9>;
         };
 
@@ -186,20 +180,20 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp W         &kp E  &kp R        &kp T                                           &kp Y            &kp U           &kp I      &kp O      &kp P
-&kp A                &kp S         &kp D  &kp F        &kp G                                           &kp H            &kp J           &kp K      &kp L      &mt LCTRL MINUS
-&kp Z                &kp X         &kp C  &kp V        &kp B                                           &kp N            &kp M           &kp COMMA  &kp DOT    &mt LSHIFT SEMICOLON
-&mt LEFT_GUI ESCAPE  &kp LEFT_ALT         &lt 1 LANG2  &mt LCTRL SPACE  &mt LSHIFT LANG1  &lt 2 ENTER  &lt 3 BACKSPACE  &mt LSHIFT DEL             &kp EQUAL  &none
+&kp Q                  &kp W         &kp E  &kp R        &kp T                                               &kp Y            &kp U      &kp I      &kp O      &kp P
+&kp A                  &kp S         &kp D  &kp F        &kp G                                               &kp H            &kp J      &kp K      &kp L      &mt LCTRL MINUS
+&kp Z                  &kp X         &kp C  &kp V        &kp B                                               &kp N            &kp M      &kp COMMA  &kp DOT    &mt LSHIFT SEMICOLON
+&mt LEFT_GUI LEFT_GUI  &kp LEFT_ALT         &lt 1 SPACE  &mt LEFT_SHIFT SPACE  &mt LCTRL LANG2  &lt 2 ENTER  &lt 3 BACKSPACE  &lt 7 DEL             &kp EQUAL  &none
             >;
         };
 
         NUM {
             label = "NUMBER";
             bindings = <
-&none       &kp LC(W)      &kp LC(A)  &none          &kp LC(Y)                  &kp SINGLE_QUOTE  &kp N7  &kp N8  &kp N9  &kp SLASH
-&kp LCTRL   &kp LS(LG(S))  &kp LC(C)  &kp LC(V)      &kp LC(Z)                  &kp PERIOD        &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp LSHIFT  &none          &kp LC(X)  &kp LS(LC(V))  &kp LC(B)                  &kp N0            &kp N1  &kp N2  &kp N3  &kp LS(SEMICOLON)
-&none       &none                     &trans         &trans     &trans  &trans  &trans            &trans          &trans  &kp LS(SINGLE_QUOTE)
+&kp ESCAPE     &kp LC(W)      &kp LC(A)  &none          &kp LC(Y)                  &kp SINGLE_QUOTE  &kp N7  &kp N8  &kp N9  &kp INT3
+&mt LCTRL TAB  &kp LS(LG(S))  &kp LC(C)  &kp LC(V)      &kp LC(Z)                  &kp PERIOD        &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp LSHIFT     &none          &kp LC(X)  &kp LS(LC(V))  &kp LC(B)                  &kp N0            &kp N1  &kp N2  &kp N3  &kp LS(SEMICOLON)
+&none          &none                     &trans         &trans     &trans  &trans  &trans            &trans          &trans  &kp LS(SINGLE_QUOTE)
             >;
         };
 
@@ -228,7 +222,7 @@
 &trans  &trans  &trans  &trans  &trans                               &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans                               &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans                               &trans  &trans    &trans    &trans    &trans
-&trans  &trans          &trans  &mt LCTRL SPACE  &kp LSHIFT  &trans  &trans  &trans              &trans    &to 0
+&trans  &trans          &trans  &mt LSHIFT SPACE  &kp LCTRL  &trans  &trans  &trans              &trans    &to 0
             >;
         };
 
@@ -238,7 +232,7 @@
 &trans  &trans  &trans  &trans  &trans                               &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans                               &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans                               &trans  &trans    &trans    &trans    &trans
-&trans  &trans          &trans  &mt LCTRL SPACE  &kp LSHIFT  &trans  &trans  &trans              &trans    &to 0
+&trans  &trans          &trans  &mt LSHIFT SPACE  &kp LCTRL  &trans  &trans  &trans              &trans    &to 0
             >;
         };
 
@@ -249,6 +243,15 @@
 &trans        &trans        &trans        &trans        &trans                        &trans      &trans          &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans                        &trans      &trans          &trans  &trans  &trans
 &trans        &trans                      &trans        &trans        &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL          &trans  &trans
+            >;
+        };
+
+        Bracket {
+            bindings = <
+&trans  &kp LS(N2)     &kp LS(N2)      &trans         &trans                  &trans  &trans  &kp LS(N8)             &kp LS(N9)    &trans
+&trans  &kp LS(N7)     &kp LS(N7)      &trans         &trans                  &trans  &trans  &kp LS(RIGHT_BRACKET)  &kp LS(NUHS)  &trans
+&trans  &kp LS(COMMA)  &kp LS(PERIOD)  &trans         &trans                  &trans  &trans  &kp RIGHT_BRACKET      &kp NUHS      &trans
+&trans  &trans                         &kp LC(SPACE)  &trans  &trans  &trans  &trans  &trans                         &trans        &trans
             >;
         };
     };
